@@ -1,0 +1,146 @@
+###############################
+### BITRIX INDEX MANAGEMENT ###
+###############################
+!/.gitignore
+# put this file for save folder but not to safe its contents
+!.gitkeep
+
+# .htaccess must be a symlink to one of the following files:
+# .htaccess.production, .htaccess.stage, .htaccess.test, .htaccess.local
+/.htaccess
+
+# urlrewrite changes to often. This is a reason why... (see next)
+/urlrewrite.php
+# Versioning of urlrewrite.php file is the same as .htaccess file.
+# /urlrewrite.php is just a symlink to one of the following files:
+# /urlrewrite.production.php for production hosting/server
+# /urlrewrite.test.php for stage server
+
+bitrix/backup
+#ignore env local files
+.idea
+.vscode
+.vscode/*
+.directory
+nbproject
+*.sublime-*
+node_modules
+_design
+.*.swp
+.*.kate-swp
+.DS_Store
+
+# uncomment to exclude bitrix public-files
+#/*
+/node_modules
+/frontend
+
+# Ingore test-page files
+/test.php
+/test/*
+/page.php
+/noauth.php
+
+# Ingore debug and export folder
+/debug/*
+/export/*
+
+# Ignore web-statistic data
+/webstat/
+
+# exclude bitrix uploads
+/upload/*
+
+*.tar.gz
+
+# Common
+!/.gitignore
+!/bitrix
+/bitrix/*.*
+/bitrix/*/*
+!/bitrix/php_interface/*
+/bitrix/php_interface/dbconn.php
+!/bitrix/.settings.example.php
+!/bitrix/admin/ajax
+/bitrix/admin/ajax/*
+!/bitrix/js/
+/bitrix/js/*
+!/bitrix/tools/
+/bitrix/tools/*
+!/bitrix/themes/.default
+/bitrix/themes/.default/*
+!/bitrix/themes/.default/icons
+/bitrix/themes/.default/icons/*
+!/bitrix/fonts/
+/bitrix/fonts/*
+!/bitrix/images/
+/bitrix/images/*
+!/bitrix/gadgets/
+/bitrix/gadgets/*
+!/bitrix/panel/
+/bitrix/panel/*
+!/bitrix/sounds/
+/bitrix/sounds/*
+
+# Qubiti bitrix site template integration program
+!/bitrix/templates/qubity
+!/bitrix/templates/.qubity
+!/local/templates/qubity
+!/local/templates/.qubity
+!/bitrix/templates/qubiti
+!/bitrix/templates/.qubiti
+!/local/templates/qubiti
+!/local/templates/.qubiti
+
+# OpenBitrixSolutions
+!/bitrix/admin/obx*.php
+!/bitrix/admin/ajax/obx*.php
+!/bitrix/modules/obx.*
+!/bitrix/modules/obx.*
+!/bitrix/components/obx
+!/bitrix/components/obx.*
+!/bitrix/wizards/obx
+!/bitrix/wizards/obx.*
+!/bitrix/js/obx.*
+!/bitrix/images/obx.*
+!/bitrix/tools/obx.*
+!/bitrix/templates/obx.*
+!/bitrix/templates/obx_*
+!/bitrix/themes/.default/obx*
+!/bitrix/themes/.default/icons/obx.*
+
+# DevTop
+!/bitrix/admin/dvt*.php
+!/bitrix/admin/ajax/dvt*.php
+!/bitrix/modules/dvt.*
+!/bitrix/modules/dvt.*
+!/bitrix/components/dvt
+!/bitrix/components/dvt.*
+!/bitrix/wizards/dvt
+!/bitrix/wizards/dvt.*
+!/bitrix/js/dvt.*
+!/bitrix/images/dvt.*
+!/bitrix/tools/dvt.*
+!/bitrix/templates/.default
+!/bitrix/templates/dvt.*
+!/bitrix/templates/dvt_*
+!/bitrix/themes/.default/dvt*
+!/bitrix/themes/.default/icons/dvt.*
+
+
+# Uncomment to Indexing main module
+# !/bitrix/modules/main
+
+# Indexing iblock module
+# !/bitrix/modules/iblock
+
+# Indexing all external modules
+# !/bitrix/modules/[a-zA-Z0-9]*.*/
+/bitrix/modules/bitrix.*
+/bitrix/modules/updater*.*
+
+# Project specific ignores
+
+
+# end of ignore file
+
