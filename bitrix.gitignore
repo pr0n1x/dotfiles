@@ -54,7 +54,6 @@ _design
 *.tar.gz
 
 # Common
-!/.gitignore
 !/bitrix
 /bitrix/*.*
 /bitrix/*/*
@@ -96,7 +95,6 @@ _design
 !/bitrix/admin/obx*.php
 !/bitrix/admin/ajax/obx*.php
 !/bitrix/modules/obx.*
-!/bitrix/modules/obx.*
 !/bitrix/components/obx
 !/bitrix/components/obx.*
 !/bitrix/wizards/obx
@@ -112,7 +110,6 @@ _design
 # DevTop
 !/bitrix/admin/dvt*.php
 !/bitrix/admin/ajax/dvt*.php
-!/bitrix/modules/dvt.*
 !/bitrix/modules/dvt.*
 !/bitrix/components/dvt
 !/bitrix/components/dvt.*
