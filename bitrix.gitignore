@@ -1,22 +1,11 @@
 ###############################
 ### BITRIX INDEX MANAGEMENT ###
 ###############################
-!/.gitignore
-# put this file for save folder but not to safe its contents
-!.gitkeep
 
 # .htaccess must be a symlink to one of the following files:
 # .htaccess.production, .htaccess.stage, .htaccess.test, .htaccess.local
-/.htaccess
+#/.htaccess
 
-# urlrewrite changes to often. This is a reason why... (see next)
-/urlrewrite.php
-# Versioning of urlrewrite.php file is the same as .htaccess file.
-# /urlrewrite.php is just a symlink to one of the following files:
-# /urlrewrite.production.php for production hosting/server
-# /urlrewrite.test.php for stage server
-
-bitrix/backup
 #ignore env local files
 .idea
 .vscode
@@ -33,7 +22,6 @@ _design
 # uncomment to exclude bitrix public-files
 #/*
 /node_modules
-/frontend
 
 # Ingore test-page files
 /test.php
@@ -81,15 +69,6 @@ _design
 !/bitrix/sounds/
 /bitrix/sounds/*
 
-# Qubiti bitrix site template integration program
-!/bitrix/templates/qubity
-!/bitrix/templates/.qubity
-!/local/templates/qubity
-!/local/templates/.qubity
-!/bitrix/templates/qubiti
-!/bitrix/templates/.qubiti
-!/local/templates/qubiti
-!/local/templates/.qubiti
 
 # OpenBitrixSolutions
 !/bitrix/admin/obx*.php
@@ -136,8 +115,13 @@ _design
 /bitrix/modules/bitrix.*
 /bitrix/modules/updater*.*
 
+
 # Project specific ignores
 
 
-# end of ignore file
 
+# end of ignore file
+!.gitignore
+!.gitattributes
+# put this file for save folder but not to safe its contents
+!.gitkeep
