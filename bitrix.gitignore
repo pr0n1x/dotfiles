@@ -14,27 +14,36 @@
 nbproject
 *.sublime-*
 node_modules
-_design
 .*.swp
 .*.kate-swp
 .DS_Store
 
-# uncomment to exclude bitrix public-files
-#/*
-/node_modules
+# exclude all log files from git
+*.log
+
+/sitemap*.xml
+/www.*/sitemap*.xml
+/robots.txt
+/www.*/robots.txt
+/*.tar.gz
+/*.tar.gz.[0-9]*
+/www.*/*.tar.gz
+/www.*/*.tar.gz.[0-9]*
 
 # Ingore test-page files
+/test/
 /test.php
-/test/*
-/page.php
 /noauth.php
+/www.*/test/
+/www.*/test.php
+/www.*/noauth.php
 
-# Ingore debug and export folder
-/debug/*
-/export/*
 
-# Ignore web-statistic data
-/webstat/
+# exclude bitrix files
+/upload
+/www.*/bitrix
+/www.*/upload
+/www.*/local
 
 # exclude bitrix uploads
 /upload/*
@@ -114,6 +123,9 @@ _design
 # !/bitrix/modules/[a-zA-Z0-9]*.*/
 /bitrix/modules/bitrix.*
 /bitrix/modules/updater*.*
+
+# indexing default site-template
+!/bitrix/templates/.default
 
 
 # Project specific ignores
