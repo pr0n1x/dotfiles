@@ -121,7 +121,6 @@ cgi-bin
 !/bitrix/js/dvt.*
 !/bitrix/images/dvt.*
 !/bitrix/tools/dvt.*
-!/bitrix/templates/.default
 !/bitrix/templates/dvt.*
 !/bitrix/templates/dvt_*
 !/bitrix/themes/.default/dvt*
