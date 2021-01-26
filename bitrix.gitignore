@@ -2,7 +2,7 @@
 ### BITRIX INDEX MANAGEMENT ###
 ###############################
 
-# .htaccess must be a symlink to one of the following files:
+# .htaccess may be a symlink to one of the following files:
 # .htaccess.production, .htaccess.stage, .htaccess.test, .htaccess.local
 #/.htaccess
 
@@ -17,25 +17,44 @@ node_modules
 .*.swp
 .*.kate-swp
 .DS_Store
+thumbs.db
 
-# exclude all log files from git
+# ignore server specific files
+cgi-bin
+*.tar.gz
+.ftpquota
+/webstat/
+/www.*/webstat/
+
+# ignore dynamically generated files
 *.log
-
 /sitemap*.xml
 /www.*/sitemap*.xml
 /robots.txt
 /www.*/robots.txt
+
+# archives
+# *.tar
+# *.tar.*
+# *.rar
+# *.zip
+# *.7z
+# *.lzma
+
+# bitrix backups
 /*.tar.gz
 /*.tar.gz.[0-9]*
 /www.*/*.tar.gz
 /www.*/*.tar.gz.[0-9]*
 
-# Ingore test-page files
-/test/
+# Ingore test & debug files
+/mysql_debug.sql
 /test.php
+/test/*
 /noauth.php
-/www.*/test/
+/www.*/mysql_debug.sql
 /www.*/test.php
+/www.*/test/*
 /www.*/noauth.php
 
 
@@ -44,11 +63,7 @@ node_modules
 /www.*/bitrix
 /www.*/upload
 /www.*/local
-
-# exclude bitrix uploads
-/upload/*
-
-*.tar.gz
+/www.*/storage
 
 # Common
 !/bitrix
@@ -112,12 +127,6 @@ node_modules
 !/bitrix/themes/.default/dvt*
 !/bitrix/themes/.default/icons/dvt.*
 
-
-# Uncomment to Indexing main module
-# !/bitrix/modules/main
-
-# Indexing iblock module
-# !/bitrix/modules/iblock
 
 # Indexing all external modules
 # !/bitrix/modules/[a-zA-Z0-9]*.*/
